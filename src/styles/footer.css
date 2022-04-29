@@ -1,0 +1,22 @@
+.column {
+  width: 400px;
+  height: 400px;
+}
+.main-box {
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+  background-color: #181818;
+  padding: 20px 0;
+}
+.small-text {
+  color: grey;
+  display: flex;
+  margin-bottom: 20px;
+}
+.small-big {
+  font-size: 25px;
+  color: grey;
+  display: flex;
+  margin-bottom: 20px;
+}

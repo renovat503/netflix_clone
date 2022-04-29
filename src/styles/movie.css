@@ -1,0 +1,17 @@
+.movie-container {
+  display: inline-table;
+  margin: 0px 10px;
+  min-width: 400px;
+  height: 200px;
+  transition: transform 450ms;
+}
+.movie-container:hover {
+  transform: scale(1.09);
+  opacity: 1;
+}
+.movie-poster {
+  width: 100%;
+}
+.movie-title {
+  color: white;
+}

@@ -1,0 +1,22 @@
+.cust {
+  background-color: #181818;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.calltitle {
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+}
+.calltext {
+  display: inline-flex;
+  color: white;
+  font-size: 30px;
+  max-width: 1000px;
+  text-align: center;
+}
+.button-cust {
+  width: 250px;
+  height: 75px;
+}

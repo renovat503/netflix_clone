@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Navbar from './components/Navbar';
+import MovieSection from './components/MovieSection';
+import Category from './components/Category';
+import CallToAction from './components/CallToAction';
+import Footer from './components/Footer';
+import requests from './Requests';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <MovieSection />
+      <Category title = "Netflix Originals"fetchUrl = {requests.fetchNetflixOriginals}/>
+      <Category title = "Trending Now"fetchUrl = {requests.fetchTrending}/>
+      <Category title = "Top Rated"fetchUrl = {requests.fetchTopRated}/>
+      <Category title = "Action Movies"fetchUrl = {requests.fetchActionMovies}/>
+      <Category title = "Comedie Movies"fetchUrl = {requests.fetchComedieMovies}/>
+      <Category title = "Horror Movies"fetchUrl = {requests.fetchHorrorMovies}/>
+      <Category title = "Romance Movies"fetchUrl = {requests.fetchRomanceMovies}/>
+      <Category title = "Documentaries"fetchUrl = {requests.fetchDocumentaries}/>
+      <CallToAction />
+      <Footer/>
     </div>
   );
 }
